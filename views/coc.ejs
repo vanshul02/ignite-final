@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<head>
+  <title>CLASH OF CLANS GAME PAGE</title>
+  <style>
+    * {
+      font-family: Arial;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: rgb(32, 1, 9);
+
+      background: linear-gradient(90deg,
+          rgba(32, 1, 9, 1) 4%,
+          rgba(9, 4, 78, 1) 56%,
+          rgba(37, 2, 19, 1) 100%,
+          rgba(9, 9, 121, 1) 100%);
+    }
+
+    .bar {
+      position: fixed;
+      margin: 0;
+      z-index: 100;
+      width: 100%;
+      height: auto;
+      background: rgb(32, 1, 9);
+      background: linear-gradient(90deg,
+          rgba(32, 1, 9, 1) 4%,
+          rgba(9, 4, 78, 1) 56%,
+          rgba(37, 2, 19, 1) 100%,
+          rgba(9, 9, 121, 1) 100%);
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lnav {
+      margin-left: 0px;
+      padding: 0px;
+    }
+
+    .rnav {
+      margin: 0;
+      padding: 0px;
+    }
+
+    .dp {
+      position: absolute;
+      top: 15px;
+      right: 100px;
+    }
+
+    ul.navb {
+      display: flex;
+      flex-direction: row;
+      color: white;
+      font-size: small;
+      font-family: Arial;
+    }
+
+    li {
+      margin-right: 25px;
+      transition: color ease-in 0.3s;
+    }
+
+    li:hover {
+      cursor: pointer;
+      border-bottom: 2px solid crimson;
+      color: crimson;
+    }
+
+    li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      color: crimson;
+    }
+
+    .recordrow {
+      display: flex;
+    }
+
+    .recordrow {
+      background: linear-gradient(to bottom, #ff6464 0%, #ff3a3a 100%);
+      padding: 3% 0;
+      margin: 0;
+      width: 80%;
+      position: absolute;
+      top: 110%;
+      left: 10%;
+      height: 30px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .record {
+      color: white;
+      font-size: 25px;
+      letter-spacing: 3px;
+      transition: color ease-in 0.3s;
+    }
+
+    .record:hover {
+      cursor: default;
+      color: crimson;
+    }
+
+    p {
+      font-size: 18px;
+      font-family: "D-DIN Condensed";
+      font-weight: normal;
+      color: white;
+      line-height: 140%;
+      padding: 0 15%;
+      letter-spacing: 0.8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bar">
+    <div class="nav">
+      <div class="lnav">
+        <ul type="none" class="navb">
+          <li><a href="/home/#">HOME</a></li>
+          <li><a href="/home/#games">GAMES</a></li>
+          <li><a href="/home/#contact">CONTACT US</a></li>
+        </ul>
+      </div>
+      <div class="mnav">
+        <img src="/src/ignite Logo-modified.png" alt="Igniting the flame" style="width: 70px" />
+      </div>
+      <div class="rnav">
+        <ul type="none" class="navb">
+          <li style="margin-left: 15px">
+            <a href="/tournaments">TOURNAMENTS</a>
+          </li>
+          <li><a href="/home/#about">ABOUT US</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="dp">
+      <a href="/auth/profile"><img src="/src/user.png" alt="wait" width="50px" /></a>
+    </div>
+  </div>
+  <div class="wrapper"
+    style="background-image: url('/src/coc2edit.jpg');margin: 0; padding: 0; height : 900px; width : 100%;background-size: cover; background-attachment: fixed;">
+    <div class="title"
+      style="color:rgb(253, 0, 51);font-size:20px;font-weight: 800;letter-spacing: 1.6px;position:relative;top:50%;text-align: center;">
+      <h1 style="text-shadow: whitesmoke 2px 2px 5px;">CLASH OF CLANS</h1>
+    </div>
+  </div>
+  <div class="recordrow">
+    <div class="record">
+      <%= tourn %> TOURNAMENTS
+    </div>
+    <div class="record">
+      <%= play %> PLAYERS
+    </div>
+  </div>
+  <div class="about" style="margin: 10% 0% 0% 20%;z-index: 100;">
+    <div class="abt" style="text-align: center;width:80%;">
+      <h1 style="font-family: 'Arial Narrow';color:crimson;">- ABOUT -</h1>
+      <br />
+      <br />
+      <p style="font-family: 'Arial Narrow';font-size: 18px;color:white">
+        Clash of Clans is a freemium mobile strategy video game developed and published by Finnish game developer
+        Supercell. The game was released for iOS platforms on August 2, 2012, and on Google Play for Android on October
+        7, 2013. The game is set in a fantasy-themed persistent world where the player is a chief of a village. Clash of
+        Clans tasks players to build their own village using the resources gained from attacking other players through
+        the game's fighting features, and producing them themselves. The main resources are gold, elixir and dark
+        elixir. Players can conjoin to create clans, groups of up to fifty people who can then participate in Clan Wars
+        together, donate and receive troops, and chat with each other.
+      </p>
+    </div>
+  </div>
+  <div
+    style="height: 3px; background: rgb(9,50,116);
+    background: linear-gradient(90deg, rgba(9,50,116,1) 0%, rgba(255,0,86,1) 52%, rgba(9,9,121,1) 90%, rgba(6,5,79,1) 99%);margin-top: 22px;margin-bottom: 12px;">
+  </div>
+  <section id="contact">
+    <div class="f" style="text-align:center;color:blanchedalmond;font-weight:600;margin:10px;padding:4px;height:25px">
+      | &copy; 2021 IGNITE GAMING CORPORATION ALL RIGHTS RESERVED |
+    </div>
+    <div style="display: flex; flex-direction: row;">
+      <div class="name" style="margin: 10px;">
+        <h2 style="color: crimson;">CREATORS</h2><br>
+        <h3 style="color: white;">VANSHUL AHUJA</h3>
+        <h3 style="color: white;">SIDDHARTH GUPTA</h3>
+        <h3 style="color: white;">SHUBHRANT SINGH YADAV</h3>
+      </div>
+      <div class="email" style="margin: 10px; margin-left: 300px;">
+        <h2 style="color: crimson;">E-MAILS</h2><br>
+        <h3 style="color: white;">20bcs240@iiitdmj.ac.in</h3>
+        <h3 style="color: white;">20bcs215@iiitdmj.ac.in</h3>
+        <h3 style="color: white;">20bcs212@iiitdmj.ac.in</h3>
+      </div>
+      <div class="instagram" style="margin: 10px; margin-left: 322px;">
+        <h2 style="color: crimson;">INSTAGRAM</h2><br>
+        <h3 style="color: white;">@vanshulahuja_02</h3>
+        <h3 style="color: white;">@siddharth_gupta_2710</h3>
+        <h3 style="color: white;">@shubhrant_1803</h3>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

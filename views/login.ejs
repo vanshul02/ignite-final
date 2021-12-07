@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login</title>
+        <style>
+            body {
+                background-color: rgba(6,17,27,255);
+                color: #fff;
+            }
+            .login {
+                position: absolute;
+                background-color: white;
+                background-image: url(https://i.ibb.co/rtcBQc9/login-cover-photo.png);
+                background-size: cover;
+                background-attachment: fixed;
+                padding: 12px 10px;
+                width: 70%;
+                top: 9%;
+                left: 15%;
+            }
+            form {
+                padding: 120px 70px;
+                height: 20rem;
+            }
+            label {
+                font-size: 20px;
+            }
+            input {
+                border-radius: 9px;
+                width: 400px;
+                height: 25px;
+                border: none;
+                margin: 10px 0;
+                outline: none;
+            }
+            .submitbtn {
+                width: 200px;
+                height: 50px;
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: 700;
+                background-color: crimson;
+                color: white;
+                border: 4px solid crimson;
+            }
+            input[type="submit"]:hover {
+                color: white;
+                background: none;
+            }
+            span {
+                color: red;
+            }
+            a {
+                color: crimson;
+                font-size: 20px;
+                text-decoration: none;
+            }
+            a:hover {
+                color: white;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body id="body">
+        <div class="login">
+            <fieldset style="border: 3px solid crimson">
+                <legend
+                    style="
+                        text-align: center;
+                        font-weight: 700;
+                        font-size: xx-large;
+                        color: crimson;
+                    "
+                >
+                    Enter to the Arena
+                </legend>
+                <form action="/auth/login" method = "POST">
+                    <div style="margin-left: 220px;">
+                        <label for="username">UserName: <span>*</span> </label
+                        ><br />
+                        <input
+                            style="padding: 5px"
+                            type="text"
+                            name="username"
+                            id="username"
+                            placeholder="Enter your username"
+                            required
+                        /><br /><br /><br />
+                        <label for="password">Password: <span>*</span></label
+                        ><br />
+                        <input
+                            style="padding: 5px"
+                            type="password"
+                            name="password"
+                            id="password"
+                            placeholder="Enter your password"
+                            required
+                        /><br /><br /><br />
+                    </div>
+                    <div style="text-align: center">
+                        <input class="submitbtn" type="submit" value="LogIn" />
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </body>
+</html>
